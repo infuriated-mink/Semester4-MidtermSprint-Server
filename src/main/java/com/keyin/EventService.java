@@ -1,4 +1,4 @@
-// package com.midtermsprint.project;
+package com.keyin;
 
 import org.springframework.stereotype.Service;
 
@@ -16,8 +16,8 @@ public class EventService {
         return events.get(id);
     }
 
-    public Event createEvent(Long id) {
-        events.put(newEvent.getId(), newEvent);
+    public Event createEvent(Event newEvent) {
+        events.put(events.size() + 1L, newEvent);
         return newEvent;
     }
 

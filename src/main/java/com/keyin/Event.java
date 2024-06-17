@@ -1,4 +1,4 @@
-// package com.midtermsprint.project;
+package com.keyin;
 
 
 import java.util.List;
@@ -8,6 +8,13 @@ public class Event {
     private String eventName;
     private String description;
     private List<String> attendees;
+
+    public Event(Long id, String eventName, String description, List<String> attendees) {
+        this.id = id;
+        this.eventName = eventName;
+        this.description = description;
+        this.attendees = attendees;
+    }
 
 
     public Long getId() {
