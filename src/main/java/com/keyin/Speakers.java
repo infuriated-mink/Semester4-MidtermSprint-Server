@@ -7,6 +7,12 @@ public class Speakers {
     private String speakerName;
     private String topic;
 
+    public Speakers(Long id, String speakerName, String topic) {
+        this.id = id;
+        this.speakerName = speakerName;
+        this.topic = topic;
+    }
+
     public Long getId() {
         return id;
     }
