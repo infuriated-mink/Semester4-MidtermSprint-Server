@@ -1,4 +1,4 @@
-package com.keyin;
+package com.keyin.hello;
 
 import org.springframework.stereotype.Service;
 

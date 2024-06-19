@@ -1,6 +1,4 @@
-package com.keyin;
-
-import java.util.List;
+package com.keyin.hello;
 
 public class Speakers {
     private Long id;

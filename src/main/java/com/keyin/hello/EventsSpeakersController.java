@@ -1,4 +1,4 @@
-package com.keyin;
+package com.keyin.hello;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -11,15 +11,15 @@ public class EventsSpeakersController {
     @Autowired
     private EventsSpeakersService eventsSpeakersService;
 
-    @GetMapping("search_events_speakers")
-    public List<EventsSpeakers> searchEventsSpeakersByEventId(@RequestParam(value = "eventId", required = false) Integer eventId) {
-        return eventsSpeakersService.findEventsSpeakersByEventId(eventId);
-    }
-
-    @GetMapping("search_events_speakers")
-    public List<EventsSpeakers> searchEventsSpeakersBySpeakerId(@RequestParam(value = "speakerId", required = false) Integer speakerId) {
-        return eventsSpeakersService.findEventsSpeakersBySpeakerId(speakerId);
-    }
+//    @GetMapping("search_events_speakers")
+//    public List<EventsSpeakers> searchEventsSpeakersByEventId(@RequestParam(value = "eventId", required = false) Integer eventId) {
+//        return eventsSpeakersService.findEventsSpeakersByEventId(eventId);
+//    }
+//
+//    @GetMapping("search_events_speakers")
+//    public List<EventsSpeakers> searchEventsSpeakersBySpeakerId(@RequestParam(value = "speakerId", required = false) Integer speakerId) {
+//        return eventsSpeakersService.findEventsSpeakersBySpeakerId(speakerId);
+//    }
 
     @GetMapping("events_speakers")
     public List<EventsSpeakers> getEventsSpeakers() {

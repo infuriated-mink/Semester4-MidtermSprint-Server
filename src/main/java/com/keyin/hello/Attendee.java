@@ -1,4 +1,4 @@
-package com.keyin;
+package com.keyin.hello;
 
 public class Attendee {
     private int id;
