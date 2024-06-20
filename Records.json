@@ -1,0 +1,46 @@
+{
+  "speakerId": 2,
+  "speakerName": "Riley ksaver",
+  "topic": "Back end development"
+}
+
+{
+  "speakerId": 3,
+  "speakerName": "John ksaver",
+  "topic": "Front end development"
+}
+
+{
+  "speakerId": 4,
+  "speakerName": "Bobby brown",
+  "topic": "Databases"
+}
+
+
+[
+  {
+    "eventId": 101,
+    "eventName": "Tech Conference",
+    "date": "2024-06-15",
+    "venueId": 5,
+    "attendees": [
+      1,
+      2,
+      3
+    ]
+  }
+]
+
+[
+  {
+    "eventId": 102,
+    "eventName": "Coding Conference",
+    "date": "2024-06-15",
+    "venueId": 6,
+    "attendees": [
+      4,
+      5,
+      6
+    ]
+  }
+]
