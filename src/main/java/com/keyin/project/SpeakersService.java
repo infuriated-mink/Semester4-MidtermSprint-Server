@@ -1,4 +1,4 @@
-package com.keyin.hello;
+package com.keyin.project;
 
 import org.springframework.stereotype.Service;
 
@@ -10,14 +10,14 @@ import java.util.Map;
 @Service
 public class SpeakersService {
 
-    private Map<Long, Speakers> speakersMap = new HashMap<>();
+    private Map<Integer, Speakers> speakersMap = new HashMap<>();
 
-    public Speakers getSpeaker(Long id) {
+    public Speakers getSpeaker(int id) {
         return speakersMap.get(id);
     }
 
     public Speakers createSpeaker(Speakers newSpeaker) {
-        speakersMap.put(speakersMap.size() + 1L, newSpeaker);
+        speakersMap.put(speakersMap.size() + 1, newSpeaker);
         return newSpeaker;
     }
 
@@ -25,7 +25,7 @@ public class SpeakersService {
         return new ArrayList<>(speakersMap.values());
     }
 
-    public Speakers updateSpeaker(Long id, Speakers updatedSpeaker) {
+    public Speakers updateSpeaker(int id, Speakers updatedSpeaker) {
         Speakers speakerToUpdate = speakersMap.get(id);
         if (speakerToUpdate != null) {
             speakerToUpdate.setSpeakerName(updatedSpeaker.getSpeakerName());
@@ -34,7 +34,7 @@ public class SpeakersService {
         return speakerToUpdate;
     }
 
-    public void deleteSpeaker(Long id) {
+    public void deleteSpeaker(int id) {
         speakersMap.remove(id);
     }
 }

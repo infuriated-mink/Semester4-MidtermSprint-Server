@@ -1,24 +1,24 @@
-package com.keyin.hello;
+package com.keyin.project;
 
 public class Attendee {
-    private int id;
+    private int attendeeId;
     private String firstName;
     private String lastName;
     private String email;
 
-    public Attendee(int id, String firstName, String lastName, String email) {
-        this.id = id;
+    public Attendee(int attendeeId, String firstName, String lastName, String email) {
+        this.attendeeId = attendeeId;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
     }
 
-    public int getId() {
-        return id;
+    public int getAttendeeId() {
+        return attendeeId;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setAttendeeId(int attendeeId) {
+        this.attendeeId = attendeeId;
     }
 
     public String getFirstName() {

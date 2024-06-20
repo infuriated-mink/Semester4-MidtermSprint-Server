@@ -1,24 +1,24 @@
-package com.keyin.hello;
+package com.keyin.project;
 
 public class Venue {
-    private int id;
+    private int venueId;
     private String venueName;
     private String location;
     private int capacity;
 
-    public Venue(int id, String venueName, String location, int capacity) {
-        this.id = id;
+    public Venue(int venueId, String venueName, String location, int capacity) {
+        this.venueId = venueId;
         this.venueName = venueName;
         this.location = location;
         this.capacity = capacity;
     }
 
-    public int getId() {
-        return id;
+    public int getVenueId() {
+        return venueId;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setVenueId(int venueId) {
+        this.venueId = venueId;
     }
 
     public String getVenueName() {

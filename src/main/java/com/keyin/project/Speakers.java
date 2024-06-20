@@ -1,22 +1,22 @@
-package com.keyin.hello;
+package com.keyin.project;
 
 public class Speakers {
-    private Long id;
+    private int speakerId;
     private String speakerName;
     private String topic;
 
-    public Speakers(Long id, String speakerName, String topic) {
-        this.id = id;
+    public Speakers(int speakerId, String speakerName, String topic) {
+        this.speakerId = speakerId;
         this.speakerName = speakerName;
         this.topic = topic;
     }
 
-    public Long getId() {
-        return id;
+    public int getSpeakerId() {
+        return speakerId;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setSpeakerId(int speakerId) {
+        this.speakerId = speakerId;
     }
 
     public String getSpeakerName() {

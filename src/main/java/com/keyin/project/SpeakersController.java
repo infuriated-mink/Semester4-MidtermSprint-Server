@@ -1,4 +1,4 @@
-package com.keyin.hello;
+package com.keyin.project;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -18,7 +18,7 @@ public class SpeakersController {
     }
 
     @GetMapping("/speaker/{id}")
-    public Speakers getSpeaker(@PathVariable Long id) {
+    public Speakers getSpeaker(@PathVariable int id) {
         return speakersService.getSpeaker(id);
     }
 
@@ -28,12 +28,12 @@ public class SpeakersController {
     }
 
     @PutMapping("/speaker/{id}")
-    public Speakers updateSpeaker(@PathVariable Long id, @RequestBody Speakers updatedSpeaker) {
+    public Speakers updateSpeaker(@PathVariable int id, @RequestBody Speakers updatedSpeaker) {
         return speakersService.updateSpeaker(id, updatedSpeaker);
     }
 
     @DeleteMapping("/speaker/{id}")
-    public void deleteSpeaker(@PathVariable Long id) {
+    public void deleteSpeaker(@PathVariable int id) {
         speakersService.deleteSpeaker(id);
     }
 }

@@ -1,4 +1,4 @@
-package com.keyin.hello;
+package com.keyin.project;
 
 public class EventsSpeakers {
     private int id;

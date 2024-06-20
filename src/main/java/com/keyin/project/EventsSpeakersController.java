@@ -1,4 +1,4 @@
-package com.keyin.hello;
+package com.keyin.project;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

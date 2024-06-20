@@ -1,4 +1,4 @@
-package com.keyin.hello;
+package com.keyin.project;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -17,8 +17,8 @@ public class EventController {
     }
 
     @GetMapping("/event/{id}")
-    public Event getEvent(@PathVariable Long id) {
-        return eventService.getEvent(id);
+    public Event getEvent(@PathVariable int eventId) {
+        return eventService.getEventId(eventId);
     }
 
     @PostMapping("/event")
@@ -27,17 +27,17 @@ public class EventController {
     }
 
     @PutMapping("/event/{id}")
-    public Event updateEvent(@PathVariable Long id, @RequestBody Event updatedEvent) {
-        return eventService.updateEvent(id, updatedEvent);
+    public Event updateEvent(@PathVariable int eventId, @RequestBody Event updatedEvent) {
+        return eventService.updateEvent(eventId, updatedEvent);
     }
 
     @DeleteMapping("/event/{id}")
-    public void deleteEvent(@PathVariable Long id) {
-        eventService.deleteEvent(id);
+    public void deleteEvent(@PathVariable int eventId) {
+        eventService.deleteEvent(eventId);
     }
 
     @PostMapping("/event/{id}/attendees")
-    public Event addAttendeesToEvent(@PathVariable Long id, @RequestBody List<String> attendees) {
-        return eventService.addAttendeesToEvent(id, attendees);
+    public Event addAttendeesToEvent(@PathVariable int eventId, @RequestBody List<Integer> attendees) {
+        return eventService.addAttendeesToEvent(eventId, attendees);
     }
 }

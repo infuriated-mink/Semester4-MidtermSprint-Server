@@ -1,4 +1,4 @@
-package com.keyin.hello;
+package com.keyin.project;
 
 import org.springframework.stereotype.Service;
 
@@ -10,14 +10,14 @@ import java.util.Map;
 @Service
 public class EventService {
 
-    private Map<Long, Event> events = new HashMap<>();
+    private Map<Integer, Event> events = new HashMap<>();
 
-    public Event getEvent(Long id) {
-        return events.get(id);
+    public Event getEventId(int eventId) {
+        return events.get(eventId);
     }
 
     public Event createEvent(Event newEvent) {
-        events.put(events.size() + 1L, newEvent);
+        events.put(events.size() + 1, newEvent);
         return newEvent;
     }
 
@@ -25,17 +25,17 @@ public class EventService {
         return new ArrayList<>(events.values());
     }
 
-    public Event updateEvent(Long id, Event updatedEvent) {
-        events.put(id, updatedEvent);
+    public Event updateEvent(int eventId, Event updatedEvent) {
+        events.put(eventId, updatedEvent);
         return updatedEvent;
     }
 
-    public void deleteEvent(Long id) {
+    public void deleteEvent(int id) {
         events.remove(id);
     }
 
-    public Event addAttendeesToEvent(Long eventId, List<String> attendees) {
-        Event event = getEvent(eventId);
+    public Event addAttendeesToEvent(int eventId, List<Integer> attendees) {
+        Event event = getEventId(eventId);
         if (event != null) {
             event.setAttendees(attendees);
         }
