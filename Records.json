@@ -1,0 +1,223 @@
+// Speakers
+[
+  {
+    "speakerId": 1,
+    "speakerName": "Jim Lahey",
+    "topic": "Full Stack Development"
+  },
+  {
+    "speakerId": 2,
+    "speakerName": "Riley ksaver",
+    "topic": "Back end development"
+  },
+  {
+    "speakerId": 3,
+    "speakerName": "John ksaver",
+    "topic": "Front end development"
+  },
+  {
+    "speakerId": 4,
+    "speakerName": "Bobby brown",
+    "topic": "Databases"
+  },
+
+
+  // Events
+  {
+    "eventId": 1,
+    "eventName": "Tech Conference",
+    "date": "2024-06-15",
+    "venueId": 5
+  },
+  {
+    "eventId": 2,
+    "eventName": "Coding Conference",
+    "date": "2024-07-21",
+    "venueId": 6
+  },
+
+
+// Attendees
+  {
+    "attendeeId": 1,
+    "firstName": "Johnny",
+    "lastName": "O'Haire",
+    "email": "johnny123@test.com",
+    "eventId": 1
+  },
+  {
+    "attendeeId": 2,
+    "firstName": "Mia",
+    "lastName": "Clark",
+    "email": "mia.clark@test.com",
+    "eventId": 2
+  },
+  {
+    "attendeeId": 3,
+    "firstName": "Ethan",
+    "lastName": "Harris",
+    "email": "ethan.harris@test.com",
+    "eventId": 2
+  },
+  {
+    "attendeeId": 11,
+    "firstName": "Ethan",
+    "lastName": "Harris",
+    "email": "ethan.harris@test.com",
+    "eventId": 1
+  },
+  {
+    "attendeeId": 4,
+    "firstName": "Charlotte",
+    "lastName": "Martin",
+    "email": "charlotte.martin@test.com",
+    "eventId": 2
+  },
+  {
+    "attendeeId": 5,
+    "firstName": "Mason",
+    "lastName": "Lee",
+    "email": "mason.lee@test.com",
+    "eventId": 1
+  },
+  {
+    "attendeeId": 6,
+    "firstName": "Amelia",
+    "lastName": "Walker",
+    "email": "amelia.walker@test.com",
+    "eventId": 1
+  },
+  {
+    "attendeeId": 6,
+    "firstName": "Amelia",
+    "lastName": "Walker",
+    "email": "amelia.walker@test.com",
+    "eventId": 2
+  },
+  {
+    "attendeeId": 7,
+    "firstName": "James",
+    "lastName": "Robinson",
+    "email": "james.robinson@test.com",
+    "eventId": 1
+  },
+  {
+    "attendeeId": 8,
+    "firstName": "Harper",
+    "lastName": "White",
+    "email": "harper.white@test.com",
+    "eventId": 2
+  },
+  {
+    "attendeeId": 9,
+    "firstName": "Logan",
+    "lastName": "Thompson",
+    "email": "logan.thompson@test.com",
+    "eventId": 2
+  },
+  {
+    "attendeeId": 10,
+    "firstName": "Ella",
+    "lastName": "Young",
+    "email": "ella.young@test.com",
+    "eventId": 1
+  },
+
+
+
+  // Venues
+  {
+    "venueId": 1,
+    "venueName": "Mile One Center",
+    "location": "St. John's, NL",
+    "capacity": 10000
+  },
+  {
+    "venueId": 2,
+    "venueName": "Rogers Arena",
+    "location": "Vancouver, BC",
+    "capacity": 18810
+  },
+  {
+    "venueId": 3,
+    "venueName": "Scotiabank Saddledome",
+    "location": "Calgary, AB",
+    "capacity": 19289
+  },
+  {
+    "venueId": 4,
+    "venueName": "Bell Centre",
+    "location": "Montreal, QC",
+    "capacity": 21302
+  },
+  {
+    "venueId": 5,
+    "venueName": "Scotiabank Arena",
+    "location": "Toronto, ON",
+    "capacity": 19800
+  },
+  {
+    "venueId": 6,
+    "venueName": "Canadian Tire Centre",
+    "location": "Ottawa, ON",
+    "capacity": 18300
+  },
+  {
+    "venueId": 7,
+    "venueName": "Rogers Place",
+    "location": "Edmonton, AB",
+    "capacity": 18347
+  },
+  {
+    "venueId": 8,
+    "venueName": "MTS Centre",
+    "location": "Winnipeg, MB",
+    "capacity": 16145
+  },
+  {
+    "venueId": 9,
+    "venueName": "Videotron Centre",
+    "location": "Quebec City, QC",
+    "capacity": 18000
+  },
+  {
+    "venueId": 10,
+    "venueName": "SaskTel Centre",
+    "location": "Saskatoon, SK",
+    "capacity": 15200
+  },
+
+
+
+  // EventsSpeakers - tracks which speakers are speaking at each event
+  {
+    "id": 1,
+    "speakerId": 1,
+    "eventId": 1
+  },
+  {
+    "id": 2,
+    "speakerId": 2,
+    "eventId": 1
+  },
+  {
+    "id": 3,
+    "speakerId": 4,
+    "eventId": 1
+  },
+  {
+    "id": 4,
+    "speakerId": 2,
+    "eventId": 2
+  },
+  {
+    "id": 5,
+    "speakerId": 3,
+    "eventId": 2
+  },
+  {
+    "id": 6,
+    "speakerId": 4,
+    "eventId": 2
+  }
+]

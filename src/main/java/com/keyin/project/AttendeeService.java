@@ -1,7 +1,6 @@
-package com.keyin;
+package com.keyin.project;
 
 import org.springframework.stereotype.Service;
-import org.springframework.util.StringUtils;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -51,5 +50,15 @@ public class AttendeeService {
             }
         }
         return attendeesFound;
+    }
+
+    public List<Attendee> getAttendeesByEventId(Integer eventId) {
+        List<Attendee> attendees = new ArrayList<>();
+        for (Attendee attendee : this.getAllAttendees()) {
+            if (attendee.getEventId() == eventId) {
+                attendees.add(attendee);
+            }
+        }
+        return attendees;
     }
 }

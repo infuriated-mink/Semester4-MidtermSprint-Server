@@ -6,17 +6,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Semester4-MidtermSprint-Server" />
+        <module name="s4_2024_summer_first_rest" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="S4-MidtermSprint-Server" target="22" />
+      <module name="Semester4-MidtermSprint-Server" target="17" />
       <module name="src" target="22" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Semester4-MidtermSprint-Server" options="-parameters" />
+      <module name="s4_2024_summer_first_rest" options="-parameters" />
     </option>
   </component>
 </project>

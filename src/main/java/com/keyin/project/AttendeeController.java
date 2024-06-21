@@ -1,6 +1,5 @@
-package com.keyin;
+package com.keyin.project;
 
-import jakarta.websocket.server.PathParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -13,12 +12,15 @@ public class AttendeeController {
     private AttendeeService attendeeService;
 
     @GetMapping("search_attendee")
-    public List<Attendee> searchAttendee(@RequestParam(value = "lastname", required = false) String lastname, String email) {
-        return attendeeService.findAttendeesByLastNameAndEmail(lastname, email);
+    public List<Attendee> searchAttendee(@RequestParam(value = "lastName", required = false) String lastName, String email) {
+        return attendeeService.findAttendeesByLastNameAndEmail(lastName, email);
     }
 
     @GetMapping("attendees")
-    public List<Attendee> getAttendees() {
+    public List<Attendee> getAllAttendees(@RequestParam(value = "eventId", required = false) Integer eventId) {
+        if (eventId != null) {
+            return attendeeService.getAttendeesByEventId(eventId);
+        }
         return attendeeService.getAllAttendees();
     }
 
