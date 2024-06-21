@@ -11,14 +11,20 @@ public class EventController {
     @Autowired
     private EventService eventService;
 
-    @GetMapping("/events")
-    public List<Event> getAllEvents() {
-        return eventService.getAllEvents();
+    @GetMapping("/event/{id}")
+    public Event getEvent(@PathVariable Integer id) {
+        return eventService.getEventId(id);
     }
 
-    @GetMapping("/event/{id}")
-    public Event getEvent(@PathVariable int eventId) {
-        return eventService.getEventId(eventId);
+    @GetMapping("/events")
+    public List<Event> getAllEvents(@RequestParam(value = "venueId", required = false) Integer venueId,
+                                    @RequestParam(value = "date", required = false) String date) {
+        if (venueId != null) {
+            return eventService.getEventsByVenueId(venueId);
+        } else if (date != null) {
+            return eventService.getEventsByDate(date);
+        }
+        return eventService.getAllEvents();
     }
 
     @PostMapping("/event")
@@ -27,17 +33,12 @@ public class EventController {
     }
 
     @PutMapping("/event/{id}")
-    public Event updateEvent(@PathVariable int eventId, @RequestBody Event updatedEvent) {
-        return eventService.updateEvent(eventId, updatedEvent);
+    public Event updateEvent(@PathVariable int id, @RequestBody Event updatedEvent) {
+        return eventService.updateEvent(id, updatedEvent);
     }
 
     @DeleteMapping("/event/{id}")
-    public void deleteEvent(@PathVariable int eventId) {
-        eventService.deleteEvent(eventId);
-    }
-
-    @PostMapping("/event/{id}/attendees")
-    public Event addAttendeesToEvent(@PathVariable int eventId, @RequestBody List<Integer> attendees) {
-        return eventService.addAttendeesToEvent(eventId, attendees);
+    public void deleteEvent(@PathVariable int id) {
+        eventService.deleteEvent(id);
     }
 }

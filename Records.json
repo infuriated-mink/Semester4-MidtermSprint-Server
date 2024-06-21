@@ -27,27 +27,13 @@
     "eventId": 1,
     "eventName": "Tech Conference",
     "date": "2024-06-15",
-    "venueId": 5,
-    "attendees": [
-      1,
-      2,
-      3,
-      4,
-      5
-    ]
+    "venueId": 5
   },
   {
     "eventId": 2,
     "eventName": "Coding Conference",
-    "date": "2024-06-15",
-    "venueId": 6,
-    "attendees": [
-      6,
-      7,
-      8,
-      9,
-      10
-    ]
+    "date": "2024-07-21",
+    "venueId": 6
   },
 
 
@@ -56,61 +42,85 @@
     "attendeeId": 1,
     "firstName": "Johnny",
     "lastName": "O'Haire",
-    "email": "johnny123@test.com"
+    "email": "johnny123@test.com",
+    "eventId": 1
   },
   {
     "attendeeId": 2,
     "firstName": "Mia",
     "lastName": "Clark",
-    "email": "mia.clark@test.com"
+    "email": "mia.clark@test.com",
+    "eventId": 2
   },
   {
     "attendeeId": 3,
     "firstName": "Ethan",
     "lastName": "Harris",
-    "email": "ethan.harris@test.com"
+    "email": "ethan.harris@test.com",
+    "eventId": 2
+  },
+  {
+    "attendeeId": 11,
+    "firstName": "Ethan",
+    "lastName": "Harris",
+    "email": "ethan.harris@test.com",
+    "eventId": 1
   },
   {
     "attendeeId": 4,
     "firstName": "Charlotte",
     "lastName": "Martin",
-    "email": "charlotte.martin@test.com"
+    "email": "charlotte.martin@test.com",
+    "eventId": 2
   },
   {
     "attendeeId": 5,
     "firstName": "Mason",
     "lastName": "Lee",
-    "email": "mason.lee@test.com"
+    "email": "mason.lee@test.com",
+    "eventId": 1
   },
   {
     "attendeeId": 6,
     "firstName": "Amelia",
     "lastName": "Walker",
-    "email": "amelia.walker@test.com"
+    "email": "amelia.walker@test.com",
+    "eventId": 1
+  },
+  {
+    "attendeeId": 6,
+    "firstName": "Amelia",
+    "lastName": "Walker",
+    "email": "amelia.walker@test.com",
+    "eventId": 2
   },
   {
     "attendeeId": 7,
     "firstName": "James",
     "lastName": "Robinson",
-    "email": "james.robinson@test.com"
+    "email": "james.robinson@test.com",
+    "eventId": 1
   },
   {
     "attendeeId": 8,
     "firstName": "Harper",
     "lastName": "White",
-    "email": "harper.white@test.com"
+    "email": "harper.white@test.com",
+    "eventId": 2
   },
   {
     "attendeeId": 9,
     "firstName": "Logan",
     "lastName": "Thompson",
-    "email": "logan.thompson@test.com"
+    "email": "logan.thompson@test.com",
+    "eventId": 2
   },
   {
     "attendeeId": 10,
     "firstName": "Ella",
     "lastName": "Young",
-    "email": "ella.young@test.com"
+    "email": "ella.young@test.com",
+    "eventId": 1
   },
 
 

@@ -34,11 +34,23 @@ public class EventService {
         events.remove(id);
     }
 
-    public Event addAttendeesToEvent(int eventId, List<Integer> attendees) {
-        Event event = getEventId(eventId);
-        if (event != null) {
-            event.setAttendees(attendees);
+    public List<Event> getEventsByVenueId(Integer venueId) {
+        List<Event> events = new ArrayList<>();
+        for (Event event : this.getAllEvents()) {
+            if (event.getVenueId() == venueId) {
+                events.add(event);
+            }
         }
-        return event;
+        return events;
+    }
+
+    public List<Event> getEventsByDate(String date) {
+        List<Event> events = new ArrayList<>();
+        for (Event event : this.getAllEvents()) {
+            if (event.getDate().equals(date)) {
+                events.add(event);
+            }
+        }
+        return events;
     }
 }

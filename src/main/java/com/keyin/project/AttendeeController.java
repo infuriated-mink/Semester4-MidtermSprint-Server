@@ -17,7 +17,10 @@ public class AttendeeController {
     }
 
     @GetMapping("attendees")
-    public List<Attendee> getAttendees() {
+    public List<Attendee> getAllAttendees(@RequestParam(value = "eventId", required = false) Integer eventId) {
+        if (eventId != null) {
+            return attendeeService.getAttendeesByEventId(eventId);
+        }
         return attendeeService.getAllAttendees();
     }
 

@@ -39,7 +39,7 @@ public class EventsSpeakersService {
         eventsSpeakersMap.remove(index);
     }
 
-    public List<EventsSpeakers> findEventsSpeakersByEventId(int eventId) {
+    public List<EventsSpeakers> getEventsSpeakersByEventId(int eventId) {
         List<EventsSpeakers> eventsSpeakersFound = new ArrayList<EventsSpeakers>();
 
         for(EventsSpeakers eventsSpeakers : eventsSpeakersMap.values()) {
@@ -50,7 +50,7 @@ public class EventsSpeakersService {
         return eventsSpeakersFound;
     }
 
-    public List<EventsSpeakers> findEventsSpeakersBySpeakerId(int speakerId) {
+    public List<EventsSpeakers> getEventsSpeakersBySpeakerId(int speakerId) {
         List<EventsSpeakers> eventsSpeakersFound = new ArrayList<EventsSpeakers>();
 
         for(EventsSpeakers eventsSpeakers : eventsSpeakersMap.values()) {

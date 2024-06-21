@@ -51,4 +51,14 @@ public class AttendeeService {
         }
         return attendeesFound;
     }
+
+    public List<Attendee> getAttendeesByEventId(Integer eventId) {
+        List<Attendee> attendees = new ArrayList<>();
+        for (Attendee attendee : this.getAllAttendees()) {
+            if (attendee.getEventId() == eventId) {
+                attendees.add(attendee);
+            }
+        }
+        return attendees;
+    }
 }

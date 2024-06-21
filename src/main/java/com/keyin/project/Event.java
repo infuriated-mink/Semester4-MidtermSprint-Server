@@ -7,14 +7,12 @@ public class Event {
     private String eventName;
     private String date;
     private int venueId;
-    private List<Integer> attendees;
 
-    public Event(int eventId, String eventName, String date, int venueId, List<Integer> attendees) {
+    public Event(int eventId, String eventName, String date, int venueId) {
         this.eventId = eventId;
         this.eventName = eventName;
         this.date = date;
         this.venueId = venueId;
-        this.attendees = attendees;
     }
 
 
@@ -40,14 +38,6 @@ public class Event {
 
     public void setDate(String date) {
         this.date = date;
-    }
-
-    public List<Integer> getAttendees() {
-        return attendees;
-    }
-
-    public void setAttendees(List<Integer> attendees) {
-        this.attendees = attendees;
     }
 
     public int getVenueId() {

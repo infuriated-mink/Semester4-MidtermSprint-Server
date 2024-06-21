@@ -22,13 +22,11 @@ public class EventsSpeakersController {
 //    }
 
     @GetMapping("events_speakers")
-    public List<EventsSpeakers> getEventsSpeakers() {
+    public List<EventsSpeakers> getEventsSpeakersByEventId(@RequestParam("eventId") Integer eventId) {
+        if (eventId != null) {
+            return eventsSpeakersService.getEventsSpeakersByEventId(eventId);
+        }
         return eventsSpeakersService.getAllEventsSpeakers();
-    }
-
-    @GetMapping("events_speakers/{id}")
-    public EventsSpeakers getEventsSpeakersById(@PathVariable Integer id) {
-        return eventsSpeakersService.getEventsSpeakers(id);
     }
 
     @PostMapping("events_speakers")

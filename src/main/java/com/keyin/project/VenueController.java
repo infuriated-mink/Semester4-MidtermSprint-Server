@@ -26,6 +26,8 @@ public class VenueController {
         return venueService.getVenue(id);
     }
 
+//    @GetMapping("/api/events/venue/")
+
     @PostMapping("venue")
     public Venue addVenue(@RequestBody Venue venue) {
         return venueService.createVenue(venue);
